@@ -114,6 +114,14 @@ header #banner  p{
     color: #545454;
 }
 
+#middle-text h6 {
+   
+    max-width: 380px;
+    color: #545454;
+    text-align: center;
+}
+
+
 
 
 /*
