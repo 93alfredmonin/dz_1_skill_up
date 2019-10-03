@@ -48,6 +48,7 @@ header #header-top{
     display: flex;
     justify-content: space-around;
     position: relative;
+    
 
 }
 
@@ -67,6 +68,7 @@ header #header-top #header-menu #login-button{
     border: none;
     cursor: pointer;
     transition: 0.3s;
+    position: relative;
 
 }
 
@@ -105,5 +107,19 @@ header #banner  p{
     
 }
 
+#middle-text h5{
+    font-size: 26px;
+    text-align: center;
+    font-weight: normal;
+    color: #545454;
+}
 
 
+
+/*
+поменять растояния между ссылками меню
+
+не получается сделать прозрачность верхней менюшки
+
+кнопки и ссылки меню убегают за картинку
+*/
