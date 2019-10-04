@@ -48,6 +48,8 @@ header #header-top{
     display: flex;
     justify-content: space-around;
     position: relative;
+    background: #ffffff;
+    opacity: 0.8;
     
 
 }
@@ -56,6 +58,12 @@ header a{
     padding: 10px 18px;
     color: #8b8383;
     font-size: 14px;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+header a:hover{
+    background: #f6afaf;
 }
 
 header #header-top #header-menu #login-button{
@@ -69,6 +77,7 @@ header #header-top #header-menu #login-button{
     cursor: pointer;
     transition: 0.3s;
     position: relative;
+    margin-left: 5px;
 
 }
 
@@ -76,18 +85,18 @@ header #header-top #header-menu #login-button:hover{
     background: #f6afaf;
 }
 
-header #banner{
-  position: relative;
+#bg{
+    background-image: url(img/bn-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 590px;
+}
+header #cont-all{
+    position: relative;
 }
 
-header #banner #bn-img{
-
-    width: 100%;
-}
-
-
-
-header #banner  h2{
+header   h2{
     font-size: 4vw;
     text-transform: uppercase;
     position: absolute;
@@ -97,7 +106,7 @@ header #banner  h2{
     color: #ffffff;
 }
 
-header #banner  p{
+header   p{
     font-size: 1.5vw;
     position: absolute;
     top: 77%;
@@ -112,22 +121,66 @@ header #banner  p{
     text-align: center;
     font-weight: normal;
     color: #545454;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 #middle-text h6 {
    
     max-width: 380px;
+    margin: auto;
     color: #545454;
     text-align: center;
+}
+#middle-circles{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 80px 0px 100px 0px;
+}
+#middle-circles .circle{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #000000;
+    margin: 10px;
+    position: relative;
+}
+#middle-circles img{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+#middle-circles .circle-text{
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.hidden-text{
+    max-width: 120px;
+}
+.hidden-text p {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+}
+#middle-circles #circle-1{
+    background-color: #4eb9f4;
+
+}
+#middle-circles #circle-1:hover{
+    background: #4eb9f4;
 }
 
 
 
 
 /*
-поменять растояния между ссылками меню
+картинка не фдоптивна
 
-не получается сделать прозрачность верхней менюшки
 
-кнопки и ссылки меню убегают за картинку
 */
