@@ -23,7 +23,13 @@ a {
     flex-wrap: wrap;
 }
 
+#logo{
+    margin-left: 170px;
+}
+
 header #header-top  #header-menu{
+    
+    margin-right: 170px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -40,12 +46,13 @@ header{
 }
 
 header #header-top{
-    height: 88px;
+    min-height: 88px;
     align-items: center;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
-    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
     background: #ffffff;
     opacity: 0.8;
 }
@@ -80,13 +87,64 @@ header #header-top #header-menu #login-button:hover{
     background: #f6afaf;
 }
 
-#bg{
-    background-image: url(img/bn-1.png);
+
+
+#bg img{
+    width: 100%;
+}
+/*#bg{
+    background-image: url(img/bn-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 590px;
+    position: relative;
+}*/
+#banner-logo{
+    position: absolute;
+    top: 36%;
+    left: 44%;
+    width: 200px;
+    height: 200px;
+    
+}
+
+#big, #mid, #small{
+position: absolute;
+background: #ffffff93;
 
 }
+
+#big{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+   
+    top: 49px;
+    left: 2px;
+}
+
+#mid{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    
+    top: 18px;
+    left: 64px;
+}
+
+#small{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+   
+    top: 75px;
+    left: 89px;
+}
+#big, #mid, #small{
+    opacity: 1;
+}
+
+
 header #cont-all{
     position: relative;
 }
@@ -129,97 +187,109 @@ header   p{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 80px 0px 100px 0px;
+    margin: 80px 170px 100px 170px;
 }
+#middle-circles img{
+    display: block; 
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 12px;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    margin: auto;
+}
+
+
 
 #middle-circles .circle{
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    margin: 10px;
-   position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
     cursor: pointer;
 }
 
-#middle-circles img{
-    display: block;
-    margin: auto;
-    margin-top: 40px;
-    position: relative;
-}
+
+
 
 #middle-circles .circle-text{
-    display: block;
     text-align: center;
     color: #ffffff;
-    position: relative;
-    padding-top: 145px;
-    padding-bottom: 18px;
-    top: -9%;
+    margin: 0px;
+   
+    
+   
+}
+#middle-circles .circle-text:hover{
+    opacity: 0.5;
 }
 
 
-.hidden-text p {
+
+
+
+.hidden-text {
     max-width: 180px;
     position: absolute;
-    top: 0%;
+    top: 18%;
     left: 0%;
     text-align: center;
     color: #ffffff;
     font-size: 15px;
     opacity: 0;
-    padding-bottom: 54px;
-    padding-top: 30px;
+    
+   
 }
 
 #middle-circles #circle-1{
     background-color: #4eb9f4;
-    background-image: url(img/c-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
+   /* background-image: url(img/c-1.png);*/
+    
 
 }
+#middle-circles .circle img:hover{
+    opacity: 0.5;
+}
 
-#middle-circles .circle:hover {
+/*#middle-circles .circle:hover {
     opacity: 0.8;
-}
+}*/
 
-.hidden-text  p:hover{
+.hidden-text:hover{
     opacity: 1;
     color: rgb(255, 255, 255);
 }
 
 #middle-circles #circle-2{
     background:#6ab823;
-    background-image: url(img/c-2.png);
-    background-repeat: no-repeat;
-    background-position: center;
+   
 }
 
 #middle-circles #circle-3{
     background:#ff5649;
-    background-image: url(img/c-3.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    
 
 }
 
 #middle-circles #circle-4{
     background:#e48f23;
-    background-image: url(img/c-4.png);
-    background-repeat: no-repeat;
-    background-position: center;
+   
 }
 
 
 
 /*
-картинка не фдоптивна
+
+хедер меню не опускает банер
+
+анимация на кружках не работает одновременно
 
 
-выровнять нижние кружочки по ширене хедора
 
-нарисовать кружочки на банере
+
 
 
 */
