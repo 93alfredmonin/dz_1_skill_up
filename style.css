@@ -25,7 +25,6 @@ a {
 
 header #header-top  #header-menu{
     display: flex;
-    /*padding: 0 0 0 345px;*/
     align-items: center;
     flex-wrap: wrap;
 } 
@@ -38,7 +37,6 @@ header #header-top  #header-menu{
 header{
     width: 100%;
     flex-wrap: wrap;
-    
 }
 
 header #header-top{
@@ -50,8 +48,6 @@ header #header-top{
     position: relative;
     background: #ffffff;
     opacity: 0.8;
-    
-
 }
 
 header a{
@@ -78,7 +74,6 @@ header #header-top #header-menu #login-button{
     transition: 0.3s;
     position: relative;
     margin-left: 5px;
-
 }
 
 header #header-top #header-menu #login-button:hover{
@@ -89,8 +84,8 @@ header #header-top #header-menu #login-button:hover{
     background-image: url(img/bn-1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
     height: 590px;
+
 }
 header #cont-all{
     position: relative;
@@ -111,9 +106,7 @@ header   p{
     position: absolute;
     top: 77%;
     left: 34%;
-    color: #ffffff;
-    
-    
+    color: #ffffff; 
 }
 
 #middle-text h5{
@@ -126,26 +119,28 @@ header   p{
 }
 
 #middle-text h6 {
-   
     max-width: 380px;
     margin: auto;
     color: #545454;
     text-align: center;
 }
+
 #middle-circles{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 80px 0px 100px 0px;
 }
+
 #middle-circles .circle{
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background: #000000;
     margin: 10px;
-    position: relative;
+   position: relative;
+    cursor: pointer;
 }
+
 #middle-circles img{
     display: block;
     margin: auto;
@@ -158,29 +153,73 @@ header   p{
     text-align: center;
     color: #ffffff;
     position: relative;
+    padding-top: 145px;
+    padding-bottom: 18px;
+    top: -9%;
 }
 
-.hidden-text{
-    max-width: 120px;
-}
+
 .hidden-text p {
+    max-width: 180px;
     position: absolute;
-    top: 0px;
+    top: 0%;
+    left: 0%;
     text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    opacity: 0;
+    padding-bottom: 54px;
+    padding-top: 30px;
 }
+
 #middle-circles #circle-1{
     background-color: #4eb9f4;
+    background-image: url(img/c-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
-#middle-circles #circle-1:hover{
-    background: #4eb9f4;
+
+#middle-circles .circle:hover {
+    opacity: 0.8;
 }
 
+.hidden-text  p:hover{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+#middle-circles #circle-2{
+    background:#6ab823;
+    background-image: url(img/c-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#middle-circles #circle-3{
+    background:#ff5649;
+    background-image: url(img/c-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#middle-circles #circle-4{
+    background:#e48f23;
+    background-image: url(img/c-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 
 /*
 картинка не фдоптивна
+
+
+выровнять нижние кружочки по ширене хедора
+
+нарисовать кружочки на банере
 
 
 */
