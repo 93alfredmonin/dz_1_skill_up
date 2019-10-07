@@ -23,12 +23,12 @@ a {
     flex-wrap: wrap;
 }
 
-#logo{
+/*#logo{
     margin-left: 170px;
-}
+}*/
 
 header #header-top  #header-menu{
-    margin-right: 170px;
+   /* margin-right: 170px;*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -49,7 +49,7 @@ header #header-top{
     align-items: center;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     position: absolute;
     background: #ffffff;
@@ -282,10 +282,12 @@ header   p{
 
 .article{
     display: flex;
+    justify-content: space-around;
     margin-bottom: 80px;
     flex-wrap: wrap;
     max-width: 955px;
-    margin: auto;
+    margin-left: 180px;
+    margin-right: 156px;
 }
 
 .article img{
@@ -297,10 +299,16 @@ header   p{
     max-width: 720px;
    
 }
-
+.article-text h4{
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #4c4c4c;
+}
 .article-text p{
     display: block;
-    
+    font-size: 14px;
+    color: #a1a1a1;
 }
 /*
 хедер меню не опускает баннер
