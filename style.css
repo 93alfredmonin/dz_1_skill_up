@@ -269,6 +269,39 @@ header   p{
     background:#e48f23ad;
 }
 
+#article-cont{
+    width: 100%;
+    border-top: solid 1px #8b8383;
+}
+
+#article-position{
+   
+    margin: auto;
+    margin-top: 45px;
+}
+
+.article{
+    display: flex;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    max-width: 955px;
+    margin: auto;
+}
+
+.article img{
+    display: block;
+}
+
+.article-text{
+    margin-left: 25px;
+    max-width: 720px;
+   
+}
+
+.article-text p{
+    display: block;
+    
+}
 /*
 хедер меню не опускает баннер
 */
