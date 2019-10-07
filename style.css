@@ -23,9 +23,13 @@ a {
     flex-wrap: wrap;
 }
 
+/*#logo{
+    margin-left: 170px;
+}*/
+
 header #header-top  #header-menu{
+   /* margin-right: 170px;*/
     display: flex;
-    /*padding: 0 0 0 345px;*/
     align-items: center;
     flex-wrap: wrap;
 } 
@@ -38,23 +42,30 @@ header #header-top  #header-menu{
 header{
     width: 100%;
     flex-wrap: wrap;
-    
 }
 
 header #header-top{
-    height: 88px;
+    min-height: 88px;
     align-items: center;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
-    position: relative;
-
+    width: 100%;
+    position: absolute;
+    background: #ffffff;
+    opacity: 0.8;
 }
 
 header a{
     padding: 10px 18px;
     color: #8b8383;
     font-size: 14px;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+header a:hover{
+    background: #f6afaf;
 }
 
 header #header-top #header-menu #login-button{
@@ -67,25 +78,62 @@ header #header-top #header-menu #login-button{
     border: none;
     cursor: pointer;
     transition: 0.3s;
-
+    position: relative;
+    margin-left: 5px;
 }
 
 header #header-top #header-menu #login-button:hover{
     background: #f6afaf;
 }
 
-header #banner{
-  position: relative;
-}
-
-header #banner #bn-img{
-
+#bg img{
     width: 100%;
 }
 
+#banner-logo{
+    position: absolute;
+    top: 36%;
+    left: 44%;
+    width: 200px;
+    height: 200px;
+    
+}
 
+#big, #mid, #small{
+position: absolute;
+background: #ffffff93;
 
-header #banner  h2{
+}
+
+#big{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 49px;
+    left: 2px;
+}
+
+#mid{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    top: 18px;
+    left: 64px;
+}
+
+#small{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: 75px;
+    left: 89px;
+}
+
+header #cont-all{
+    position: relative;
+}
+
+header   h2{
     font-size: 4vw;
     text-transform: uppercase;
     position: absolute;
@@ -95,15 +143,173 @@ header #banner  h2{
     color: #ffffff;
 }
 
-header #banner  p{
+header   p{
     font-size: 1.5vw;
     position: absolute;
     top: 77%;
     left: 34%;
-    color: #ffffff;
-    
-    
+    color: #ffffff; 
 }
 
+#middle-text h5{
+    font-size: 26px;
+    text-align: center;
+    font-weight: normal;
+    color: #545454;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
 
+#middle-text h6 {
+    max-width: 380px;
+    margin: auto;
+    color: #545454;
+    text-align: center;
+}
 
+#middle-circles{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 80px 170px 100px 170px;
+    position: relative;
+}
+
+#middle-circles img{
+    display: block; 
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 12px;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    margin: auto;
+}
+
+#middle-circles .circle{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+#middle-circles .circle-text{
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;  
+}
+
+.hidden-text {
+    max-width: 180px;
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#middle-circles #circle-1{
+    background-color: #4eb9f4;
+}
+
+.hidden-text:hover{
+    opacity: 1;
+}
+
+#middle-circles #circle-2{
+    background:#6ab823;
+}
+
+#middle-circles #circle-3{
+    background:#ff5649;
+}
+
+#middle-circles #circle-4{
+    background:#e48f23; 
+}
+.circle-cont{
+    position: relative;
+}
+
+.circle-inv{
+    height: 150px;
+    width: 140px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    top: 13%;
+    left: 13%;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s; 
+}
+.circle-inv:hover{
+    opacity: 1;
+}
+
+#circle-inv-1{
+    background:#4ebaf4ad;
+}
+
+#circle-inv-2{
+    background:#6ab823ad;
+}
+
+#circle-inv-3{
+    background:#ff5649ad;
+}
+
+#circle-inv-4{
+    background:#e48f23ad;
+}
+
+#article-cont{
+    width: 100%;
+    border-top: solid 1px #8b8383;
+}
+
+#article-position{
+   
+    margin: auto;
+    margin-top: 45px;
+}
+
+.article{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    max-width: 955px;
+    margin-left: 180px;
+    margin-right: 156px;
+}
+
+.article img{
+    display: block;
+}
+
+.article-text{
+    margin-left: 25px;
+    max-width: 720px;
+   
+}
+.article-text h4{
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #4c4c4c;
+}
+.article-text p{
+    display: block;
+    font-size: 14px;
+    color: #a1a1a1;
+}
+/*
+хедер меню не опускает баннер
+*/
