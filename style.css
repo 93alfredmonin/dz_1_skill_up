@@ -23,12 +23,7 @@ a {
     flex-wrap: wrap;
 }
 
-/*#logo{
-    margin-left: 170px;
-}*/
-
 header #header-top  #header-menu{
-   /* margin-right: 170px;*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -88,6 +83,7 @@ header #header-top #header-menu #login-button:hover{
 
 #bg img{
     width: 100%;
+    margin: auto;
 }
 
 #banner-logo{
@@ -310,6 +306,79 @@ header   p{
     font-size: 14px;
     color: #a1a1a1;
 }
-/*
-хедер меню не опускает баннер
-*/
+
+footer{
+    max-width: 1280px;
+    background: #2a2b29;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+footer #footer-text{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 650px;
+    margin-left: 180px;
+    margin-bottom: 35px;
+}
+
+footer #footer-text .sub-menu{
+    max-width: 105px;
+    text-transform: capitalize;
+    margin-right: 60px;
+    
+}
+
+footer #footer-text h6{
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+    color: #aeaeae;
+    font-weight: normal;
+}
+
+footer #footer-text a{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #aeaeae;
+}
+
+footer #footer-text a:hover{
+    color: #de6d6e;
+}
+#footer-logo{
+    margin:auto;
+}
+#footer-circles{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footer-circles .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #aeaeae;
+    cursor: pointer;
+
+}
+
+#footer-circles .icon:hover{
+    background: #de6d6e;
+
+}
+
+#footer-logo img{
+    display: block;
+    margin: auto;
+    margin-top: 15%;
+}
+
+#site p{
+    font-size: 14px;
+    color: #aeaeae;
+}
+
