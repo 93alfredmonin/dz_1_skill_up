@@ -382,7 +382,7 @@ footer #footer-text a:hover{
     color: #aeaeae;
 }
 
-@media(max-width:700px){
+@media(max-width:763px){
 
     #header-menu{
         justify-content: center;
@@ -424,6 +424,16 @@ footer #footer-text a:hover{
     }
 
     footer #footer-text {
-    margin-left: 35px;
+    margin: auto;
     }
+
+    footer #footer-text .sub-menu{
+        margin: 10px 20px;
+    }
+    
+    .hidden-sub-menu{
+        display: none;
+    }
+
+    
 }
